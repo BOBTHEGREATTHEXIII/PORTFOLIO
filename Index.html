@@ -1,0 +1,271 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryan | Math Portfolio</title>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --accent: #38bdf8;
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --border: #334155;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 4rem 1.5rem;
+      text-align: center;
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      max-width: 700px;
+      margin: auto;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    nav {
+      margin-top: 2rem;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: auto;
+      padding: 4rem 0;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: var(--accent);
+    }
+
+    .about {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 1.5rem;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .skill {
+      background: #2563eb;
+      padding: 0.6rem 1rem;
+      border-radius: 999px;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+    }
+
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 0.5rem;
+      }
+
+      .section-title {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Ryan's Math Portfolio</h1>
+    <p>
+      Student passionate about mathematics, problem solving, and continuous learning.
+      Interested in building projects, exploring mathematical concepts, and showcasing
+      skills for future opportunities at top companies.
+    </p>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#interests">Interests</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+
+      <div class="about">
+        <p>
+          Hello! I'm Ryan, a student interested in mathematics and technology.
+          I enjoy learning about algebra, geometry, and mathematical problem solving.
+          This portfolio is a place where I can share future projects, interests,
+          and skills as I continue learning and growing.
+        </p>
+
+        <p>
+          I hope to apply my math and analytical thinking skills toward internships
+          and opportunities with leading companies in the future.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Featured Work</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Fractions Explorer</h3>
+          <p>
+            Placeholder project focused on understanding fractions,
+            simplifying expressions, and visual learning methods.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Geometry Studies</h3>
+          <p>
+            Placeholder section for geometry concepts including
+            angles, shapes, proofs, and coordinate geometry.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Algebra Practice</h3>
+          <p>
+            Placeholder project exploring equations, graphing,
+            variables, and algebraic reasoning.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills-list">
+        <div class="skill">Problem Solving</div>
+        <div class="skill">Algebra</div>
+        <div class="skill">Geometry</div>
+        <div class="skill">Fractions</div>
+        <div class="skill">Critical Thinking</div>
+        <div class="skill">Mathematical Reasoning</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+      </div>
+    </section>
+
+    <section id="interests">
+      <h2 class="section-title">Interests</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Mathematics</h3>
+          <p>
+            Interested in learning mathematical concepts and applying them
+            to real-world challenges and technical fields.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Web Development</h3>
+          <p>
+            Exploring website creation and design to build professional
+            portfolio projects and educational resources.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Future Projects</h3>
+          <p>
+            Planning to create interactive math content, educational tools,
+            and portfolio-ready applications.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Ryan's Portfolio | Built with HTML & CSS</p>
+  </footer>
+
+</body>
+</html
